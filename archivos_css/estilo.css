@@ -1,0 +1,164 @@
+body
+{
+background-color: #000;
+color: white;
+font-family: Arial, sans-serif;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+justify-content: space-between;
+ padding: 30px 20px;
+}
+
+.logo {
+max-width: 250px;
+margin-top: 20px;
+}
+
+h1 {
+color: red;
+font-size: 3em;
+text-shadow: 2px 2px 5px black;
+
+}
+
+p {
+font-size: 1.2em;
+color: #ccc;
+}
+table {
+border-collapse: collapse;
+width: 100%;
+margin-top: 20px;
+}
+
+th, td {
+border: 1px solid #ff0000;
+padding: 8px;
+text-align: left;
+}
+
+thead th {
+border-bottom: 2px solid #00ff00;
+}
+
+tbody tr:nth-child(even) td {
+border-bottom: 1px solid #0000ff;
+}
+
+tbody tr:nth-child(odd) td {
+border-bottom: 1px solid #ffff00;
+}
+
+h2{color: #320cf0;}
+main h2 {text-align: center; margin-top: 30px;
+color:#ff0000}
+
+.contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  .producto {
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: #0d0d0d;
+  }
+  .producto img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    aspect-ratio: 4 / 3;
+  }
+  .producto h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+  }
+  .producto p {
+    font-size: 16px;
+    margin: 5px 0;}
+    
+    .producto button {
+      transition: background-color 0.3s ease;
+        background-color: #2610ed;
+        color: #eff1f2;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+ 
+  .producto button:hover {
+    background-color: #e90b0b;
+  }
+
+  
+
+.cerrar {
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+}
+#carrito-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #2410d7;
+  border-left: 2px solid #efe3e3;
+  width: 300px;
+  height: 100%;
+  padding: 1rem;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.oculto {
+  display: none;
+}
+
+#carrito-items img {
+ 
+   max-height: 300px; 
+  overflow-y: auto;
+  padding-right: 10px;
+   width: 50px;
+  height: 50px;
+}
+
+.item-carrito {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.cantidad-controles button {
+  margin: 0 0.2rem;
+}
+
+.boton-carrito-fijo {
+  position: fixed;
+  top: 20px;         /* Distancia desde arriba */
+  right: 20px;       /* Puedes cambiar a 'left: 20px;' si lo quieres a la izquierda */
+  background-color: #333;
+  color: rgb(245, 243, 243);
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1000;     /* Asegura que esté encima de todo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
