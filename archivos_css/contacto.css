@@ -45,5 +45,40 @@ body {
   }
 
   h1 {
-    color: #00ffcc;
+    color: #ec0808;
   }
+
+.cerrar {
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+}
+#carrito-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #2410d7;
+  border-left: 2px solid #efe3e3;
+  width: 300px;
+  height: 100%;
+  padding: 1rem;
+  overflow-y: auto;
+  z-index: 1000;
+}
+.oculto {
+  display: none;
+}
+  .boton-carrito-fijo {
+  position: fixed;
+  top: 20px;         /* Distancia desde arriba */
+  right: 20px;       /* Puedes cambiar a 'left: 20px;' si lo quieres a la izquierda */
+  background-color: #333;
+  color: rgb(245, 243, 243);
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1000;     /* Asegura que esté encima de todo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}

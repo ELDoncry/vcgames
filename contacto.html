@@ -11,7 +11,8 @@
   
 </head>
 <body>
-     
+     <button id="verCarrito" class="boton-carrito-fijo">🛒 Carrito (<span id="cantidad-carrito">0</span>)</button>
+
   <header style="background-color: #333; color: white; padding: 10px;">
     <h1 style="margin: 0;">VC GAMES</h1>
     <img src="imagenes/CONSOLAS.jpg" alt="consola consola-izquierda" class="consola-izquierda" width="290" height="230">
@@ -20,9 +21,9 @@
     <nav>
         <ul>
           
-            <li style="display: inline; margin-right: 10px;"><a href="Index.html" style="color: rgb(40, 17, 212); text-decoration: none; font-size: 20px;">Inicio</a></li>
-            <li style="display: inline; margin-right: 10px;"><a href="productos.html" style="color: rgb(20, 9, 223); text-decoration: none; font-size: 20px;">Productos</a></li>
-            <li style="display: inline; margin-right: 10px;"><a href="contacto.html" style="color: rgb(50, 13, 238); text-decoration: none; font-size: 20px;">Contacto</a></li>
+            <li style="display: inline; margin-right: 10px;"><a href="Index.html" style="color: rgb(19, 12, 228); text-decoration: none; font-size: 25px;">Inicio</a></li>
+            <li style="display: inline; margin-right: 10px;"><a href="productos.html" style="color: rgb(225, 10, 13); text-decoration: none; font-size: 25px;">Productos</a></li>
+            <li style="display: inline; margin-right: 10px;"><a href="contacto.html" style="color: rgb(10, 245, 57); text-decoration: none; font-size: 25px;">Contacto</a></li>
         </ul>
 
     </nav>
@@ -67,9 +68,23 @@
   loading="lazy" 
   referrerpolicy="no-referrer-when-downgrade">
 </iframe>
+     
+    <div id="carrito-panel" class="oculto">
+  <h2>Carrito</h2>
+   <br>
+  <div id="carrito-items"></div>
+   <button id="vaciar-carrito">Vaciar carrito</button>
+  <button onclick="comprar()">Comprar ahora</button>
+   <button id="cerrar-carrito">Cerrar</button>
+  
+  <p>Total: $<span id="total-carrito">0</span></p>
+  <p>Productos: <span id="cantidad-productos">0</span></p>
+ 
+</div>
+
 <footer style="margin-top: 40px; padding: 20px; background-color: #111; color: #aaa; text-align: center; border-top: 1px solid #333;">
     &copy; 2025 VC Games. Todos los derechos reservados. Diseñado por Cristian Vasco.
   </footer>
-  
+  <script src="ARCHIVO_JS/carrito.js"></script>
 </body>
 </html>
